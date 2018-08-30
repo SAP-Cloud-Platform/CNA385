@@ -66,7 +66,7 @@ CLASS zcna_cl_data_generator IMPLEMENTATION.
     ls_city-population  = 21750000.
     APPEND ls_city to lt_city.
 
-    INSERT zcna_t_city from table lt_city.
+    INSERT zcna_t_city from table @lt_city.
 
     if sy-subrc = 0.
         out->write( 'Data generation was successful.').
