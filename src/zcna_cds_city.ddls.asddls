@@ -10,12 +10,12 @@ define view ZCNA_CDS_CITY as select from zcna_t_city {
     @UI.hidden: true
     key city_id, 
     @Search.defaultSearchElement: true
-    @UI: { lineItem: [ { position: 10 } ] , identification: [ { position: 10 } ] , selectionField: [ { position: 10 } ] } 
+    @UI: { lineItem: [ { position: 10, label: 'Name'  } ] , identification: [ { position: 10, label: 'Name' } ] , selectionField: [ { position: 10, label: 'Name' } ] } 
     name, 
     @Search.defaultSearchElement: true
-    @UI: { lineItem: [ { position: 20 } ] , identification: [ { position: 30 } ] , selectionField: [ { position: 20 } ] }
+    @UI: { lineItem: [ { position: 20, label: 'Country'  } ] , identification: [ { position: 30, label: 'Country'  } ] , selectionField: [ { position: 20, label: 'Country' } ] }
     country, 
-    @UI: { lineItem: [ { position: 30 } ] , identification: [ { position: 20 } ] } 
+    @UI: { lineItem: [ { position: 30, label: 'Population'  } ] , identification: [ { position: 20, label: 'Population' } ] } 
     population
     
 }
